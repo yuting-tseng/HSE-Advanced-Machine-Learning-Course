@@ -2,8 +2,6 @@
 
 This repository contains programming assignments notebooks for the [course](https://www.coursera.org/learn/competitive-data-science/home/welcome) about competitive data science.
 
-## Additional Materials and Links
-
 ## Week 1
 
 ### Recap of main ML algorithms
@@ -113,7 +111,7 @@ Finetuning
 
 #### Classification
 * [Evaluation Metrics for Classification Problems: Quick Examples + References](http://queirozf.com/entries/evaluation-metrics-for-classification-quick-examples-references)
-* [Decision Trees: ¡§Gini¡¨ vs. ¡§Entropy¡¨ criteria](https://www.garysieling.com/blog/sklearn-gini-vs-entropy-criteria)
+* [Decision Trees: Â°ÃŸGiniÂ°Â® vs. Â°ÃŸEntropyÂ°Â® criteria](https://www.garysieling.com/blog/sklearn-gini-vs-entropy-criteria)
 * [Understanding ROC curves](http://www.navan.name/roc/)
 
 #### Ranking
@@ -158,8 +156,8 @@ Finetuning
 ### Ensembling
 
 * [Kaggle ensembling guide at MLWave.com (overview of approaches)](https://mlwave.com/kaggle-ensembling-guide/)
-* [StackNet ¡X a computational, scalable and analytical meta modelling framework (by KazAnova)](https://github.com/kaz-Anova/StackNet)
-* [Heamy ¡X a set of useful tools for competitive data science (including ensembling)](https://github.com/rushter/heamy)
+* [StackNet Â°X a computational, scalable and analytical meta modelling framework (by KazAnova)](https://github.com/kaz-Anova/StackNet)
+* [Heamy Â°X a set of useful tools for competitive data science (including ensembling)](https://github.com/rushter/heamy)
 
 
 ## Week 5
@@ -168,10 +166,11 @@ Finetuning
 
 You can often find a solution of the competition you're interested on its forum. Here we put links to collections of such solutions that will prove useful to you.
 
-## Final competition
+### Final competition
 
 The competition is hosted on Kaggle Inclass and can be found [here](https://www.kaggle.com/c/competitive-data-science-predict-future-sales). You may also find useful the first version of the competition hosted on InClass/
 
+<br/>
 
 #### Past solutions
 * http://ndres.me/kaggle-past-solutions/
