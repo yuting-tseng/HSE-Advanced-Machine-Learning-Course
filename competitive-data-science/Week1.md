@@ -119,13 +119,17 @@ Coordinates
 
 ## Feature extraction from text and images
 
-#### Text to Vector
+#### Feature extraction from text
 
-Pipeline of applying BOW
-1. Preprocessing:
+* Preprocessing 
 	* Lowercase, stemming, lemmatization, stopwords
-2. N-grams can help to local context
-3. Postprocessing: TF-IDF
+* Bag of words
+	* Huge vectors
+	* N-grams can help to use local context
+	* TFiDF can be use as postpreprocessing
+* Word2vec
+	* Relatively small vectors
+	* Pretrained model
 
 BOW and w2v comparison
 * Bag od words
@@ -135,18 +139,6 @@ BOW and w2v comparison
 	* Relatively small vectors
 	* Values in vector can be interpreted only in some cases
 	* The words with similiar meaning often have similiar embeddings 
-
-#### Feature extraction from text
-
-* Preprocessing 
-	* Lowercase, stemming, lemmatization, stopwords
-* Bag of words
-	* Huge vectors
-	* N-geams can help to use local context
-	* TFiDF can be use as postpreprocessing
-* Word2vec
-	* Relatively small vectors
-	* Pretrained model
 
 Bag of words
 * [Feature extraction from text with Sklearn](http://scikit-learn.org/stable/modules/feature_extraction.html)
@@ -178,3 +170,8 @@ Finetuning
 * [How to Retrain Inception's Final Layer for New Categories in Tensorflow](https://www.tensorflow.org/tutorials/image_retraining)
 * [Fine-tuning Deep Learning Models in Keras](https://flyyufelix.github.io/2016/10/08/fine-tuning-in-keras-part2.html)
 
+<br/>
+
+## Final competition
+
+The competition is hosted on Kaggle Inclass and can be found [here](https://www.kaggle.com/c/competitive-data-science-predict-future-sales). You may also find useful the first version of the competition hosted on InClass/
