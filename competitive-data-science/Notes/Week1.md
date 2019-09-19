@@ -84,13 +84,12 @@ But you souldn't underestimate the others.
 * Interactions of categorical features can help Linear models and KNN
 
 
-#### Datetime and coordinates
-Datetime
+#### Datetime
 * Periodicity
 * Time since row-independent/row-dependent event
 * Difference between dates
 
-Coordinates 
+#### Coordinates 
 * lnteresting places from train/test data or additional data
 * Centers of clusters
 * Aggregated statistics
@@ -105,13 +104,15 @@ Coordinates
 * Xgboost can handle NaN
 
 
-#### Feature preprocessing
+#### Additional Materials
+
+Feature preprocessing
 * [Preprocessing in Sklearn](http://scikit-learn.org/stable/modules/preprocessing.html)
 * [Andrew NG about gradient descent and feature scaling](https://www.coursera.org/learn/machine-learning/lecture/xx3Da/gradient-descent-in-practice-i-feature-scaling)
 * [Feature Scaling and the effect of standardization for machine learning algorithms](http://sebastianraschka.com/Articles/2014_about_feature_scaling.html)
 
 
-#### Feature generation
+Feature generation
 * [Discover Feature Engineering, How to Engineer Features and How to Get Good at It](https://machinelearningmastery.com/discover-feature-engineering-how-to-engineer-features-and-how-to-get-good-at-it/)
 * [Discussion of feature engineering on Quora](https://www.quora.com/What-are-some-best-practices-in-Feature-Engineering)
 
@@ -124,35 +125,29 @@ Coordinates
 * Preprocessing 
 	* Lowercase, stemming, lemmatization, stopwords
 * Bag of words
-	* Huge vectors
-	* N-grams can help to use local context
-	* TFiDF can be use as postpreprocessing
+	* [Feature extraction from text with Sklearn](http://scikit-learn.org/stable/modules/feature_extraction.html)
+	* [More examples of using Sklearn](https://andhint.github.io/machine-learning/nlp/Feature-Extraction-From-Text/)
 * Word2vec
-	* Relatively small vectors
-	* Pretrained model
+	* [Tutorial to Word2vec](https://www.tensorflow.org/tutorials/word2vec)
+	* [Tutorial to word2vec usage](https://rare-technologies.com/word2vec-tutorial/)
+	* [Text Classification With Word2Vec](http://nadbordrozd.github.io/blog/2016/05/20/text-classification-with-word2vec/)
+	* [Introduction to Word Embedding Models with Word2Vec](https://taylorwhitten.github.io/blog/word2vec)
+* NLP Libraries
+	* [NLTK](http://www.nltk.org/)
+	* [TextBlob](https://github.com/sloria/TextBlob)
 
 BOW and w2v comparison
-* Bag od words
+* Bag of words
  	* Very large vectors
  	* Meaning of each value in vector is known
+ 	* N-grams can help to use local context
+	* TFiDF can be use as postpreprocessing
 * Word2vec
 	* Relatively small vectors
 	* Values in vector can be interpreted only in some cases
 	* The words with similiar meaning often have similiar embeddings 
+	* Pretrained model
 
-Bag of words
-* [Feature extraction from text with Sklearn](http://scikit-learn.org/stable/modules/feature_extraction.html)
-* [More examples of using Sklearn](https://andhint.github.io/machine-learning/nlp/Feature-Extraction-From-Text/)
-
-Word2vec
-* [Tutorial to Word2vec](https://www.tensorflow.org/tutorials/word2vec)
-* [Tutorial to word2vec usage](https://rare-technologies.com/word2vec-tutorial/)
-* [Text Classification With Word2Vec](http://nadbordrozd.github.io/blog/2016/05/20/text-classification-with-word2vec/)
-* [Introduction to Word Embedding Models with Word2Vec](https://taylorwhitten.github.io/blog/word2vec)
-
-NLP Libraries
-* [NLTK](http://www.nltk.org/)
-* [TextBlob](https://github.com/sloria/TextBlob)
 
 #### Feature extraction from images
 

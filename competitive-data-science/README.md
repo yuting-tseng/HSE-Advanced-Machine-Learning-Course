@@ -1,4 +1,4 @@
-# Materials for "How to Win a Data Science Competition: Learn from Top Kagglers" course
+# Learning Note for "How to Win a Data Science Competition: Learn from Top Kagglers" course
 
 This repository contains programming assignments notebooks for the [course](https://www.coursera.org/learn/competitive-data-science/home/welcome) about competitive data science.
 
@@ -8,32 +8,16 @@ This repository contains programming assignments notebooks for the [course](http
 * Feature Preprocessing and Generation with Respect to Models
 * Final Project Description
 
-[Week 1 note](Week1.md)
+[Week 1 note](./Notes/Week1.md)
 
 
 ## Week 2
 
-### Exploratory data analysis
+* Exploratory data analysis
+* Validation
+* Data leakages
 
-#### Visualization tools
-* [Seaborn](https://seaborn.pydata.org/)
-* [Plotly](https://plot.ly/python/)
-* [Bokeh](https://github.com/bokeh/bokeh)
-* [ggplot](http://ggplot.yhathq.com/)
-* [Graph visualization with NetworkX](https://networkx.github.io/)
-
-#### Others
-* [Biclustering algorithms for sorting corrplots](http://scikit-learn.org/stable/auto_examples/bicluster/plot_spectral_biclustering.html)
-
-### Validation
-
-* [Validation in Sklearn](http://scikit-learn.org/stable/modules/cross_validation.html)
-* [Advices on validation in a competition](http://www.chioka.in/how-to-select-your-final-models-in-a-kaggle-competitio/)
-
-### Data leakages
-
-* [Perfect score script by Oleg Trott](https://www.kaggle.com/olegtrott/the-perfect-score-script) -- used to probe leaderboard
-* [Page about data leakages on Kaggle](https://www.kaggle.com/wiki/Leakage)
+[Week 2 note](./Notes/Week2.md)
 
 
 ## Week 3
@@ -96,6 +80,10 @@ This repository contains programming assignments notebooks for the [course](http
 ### Competitions go through
 
 You can often find a solution of the competition you're interested on its forum. Here we put links to collections of such solutions that will prove useful to you.
+
+## All Materials
+
+[Materials for course](./Notes/Materials.md)
 
 <br/>
 
