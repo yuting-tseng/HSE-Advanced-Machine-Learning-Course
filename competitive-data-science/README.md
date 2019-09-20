@@ -81,6 +81,9 @@ This repository contains programming assignments notebooks for the [course](http
 
 You can often find a solution of the competition you're interested on its forum. Here we put links to collections of such solutions that will prove useful to you.
 
+[Final project Note](Final_Project.md)
+
+
 ## All Materials
 
 [Materials for course](./Notes/Materials.md)

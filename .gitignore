@@ -2,3 +2,4 @@
 *__pycache__
 competitive-data-science/readonly/final_project_data/
 *.ipynb_checkpoints
+*tmp/

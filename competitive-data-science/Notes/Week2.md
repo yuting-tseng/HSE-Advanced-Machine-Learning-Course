@@ -10,7 +10,7 @@ With EDA we can:
 * Generate hypothesizes
 * Find insight (<I>magic features</I>)
 
-**Do EDA first! Do not immediately dig into modelling.**
+Do EDA first! Do not immediately dig into modelling.
 
 #### Building intuition about the data
 * Get domain knowledge
@@ -31,31 +31,29 @@ Two things to do with anonymized features:
 #### Visualization
 
 Individual features exploration
-
+* Histograms
+* Plot (index vs value)
+* Statistics
+ 
 ``` python
-# Histograms
 plt.hist(x)
-
-# Plot (index vs value)
 plt.plot(x, '.')
 
-# Statistics
 df.describe()
 x.mean()
 x.var()
 
-# Other tools
 x.value_counts()
 x.isnull()
 ```
 
 Explore feature relations
-	* Pairs
-		* Scatter plot, scatter matrix
-		* Corrplot
-	* Groups
-		* Corrplot + clustering
-		* Plot (index vs feature statistics)
+* Pairs
+	* Scatter plot, scatter matrix
+	* Corrplot
+* Groups
+	* Corrplot + clustering
+	* Plot (index vs feature statistics)
 
 ``` python
 plt.scatter(x1, x2)
