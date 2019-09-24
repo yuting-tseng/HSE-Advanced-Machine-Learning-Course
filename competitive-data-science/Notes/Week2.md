@@ -2,8 +2,6 @@
 
 ## Exploratory data analysis (EDA)
 
-#### Exploratory data analysis (EDA)
-
 With EDA we can:
 * Better understand the data
 * Build an intuition about the data
@@ -20,30 +18,25 @@ Do EDA first! Do not immediately dig into modelling.
 * Understand how the data was generated
 	* It is crucial to understand the generation process to set up a proper validation scheme
 
-#### Exploring anonymized data
-
-Two things to do with anonymized features:
+#### Exploring anonymized data/features
 * Try to decode the fetures
 	* Guess the true meaning of the feature
 * Guess the feature types
 	* Each type needs its own preprocessing
 
-#### Visualization
+### Visualization
 
-Individual features exploration
-* Histograms
-* Plot (index vs value)
-* Statistics
- 
+Explore individual features
+
 ``` python
-plt.hist(x)
-plt.plot(x, '.')
+plt.hist(x) # Histograms
+plt.plot(x, '.') # Plot (index vs value)
 
-df.describe()
+df.describe() # Statistics
 x.mean()
 x.var()
 
-x.value_counts()
+x.value_counts() # Other tools
 x.isnull()
 ```
 
@@ -72,11 +65,12 @@ Visualization tools
 Others
 * [Biclustering algorithms for sorting corrplots](http://scikit-learn.org/stable/auto_examples/bicluster/plot_spectral_biclustering.html)
 
+<br/>
 
 ## Validation
 
 #### Validation and overfitting
-<img src="Images/image1.png" width="30%">
+<img src="images/image1.png" width="30%">
 
 * Validation helps us evaluate a quality of the model
 * Validation helps us select the model which will perform best on the unseen data
