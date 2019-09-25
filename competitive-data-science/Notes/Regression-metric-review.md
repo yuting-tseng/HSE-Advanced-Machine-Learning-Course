@@ -42,7 +42,7 @@ If our target matrix is RMSE, we can still optimize our model with MSE , MSE is 
 </p>
 
 <p>
-We use R-squared matrix to measure our model is better than a constant baseline. By optimize <img src="https://latex.codecogs.com/svg.latex?\Large&space;R^2" title="R2-2" />, we could also optimize MSE (equavilant). The <img src="https://latex.codecogs.com/svg.latex?\Large&space;R^2" title="R2-2" /> between [0, 1], **0** means not better than baseline, **1** means better than baseline.
+We use R-squared matrix to measure our model is better than a constant baseline. By optimize <img src="https://latex.codecogs.com/svg.latex?\Large&space;R^2" title="R2-2" />, we could also optimize MSE (equavilant). The <img src="https://latex.codecogs.com/svg.latex?\Large&space;R^2" title="R2-2" /> between [0, 1], <b>0</b> means not better than baseline, <b>1</b> means better than baseline.
 </p>
 
 
