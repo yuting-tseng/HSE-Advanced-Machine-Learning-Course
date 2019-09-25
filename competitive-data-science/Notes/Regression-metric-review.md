@@ -13,23 +13,23 @@ Compare the constants
 ## MSE & MAE 
 
 
-![MSE formula](images/Regression-metric-review/MSE.svg)
+![MSE formula](Images/Regression-metric-review/MSE.svg)
 
-![MAE formula](images/Regression-metric-review/MAE.svg)
+![MAE formula](Images/Regression-metric-review/MAE.svg)
 
 , where <img src="https://latex.codecogs.com/svg.latex?\Large&space;N" title="img1" />=number of objects, 
-![where y](images/Regression-metric-review/MSE2.svg)= target for i-th object, 
-![where y hat](images/Regression-metric-review/MSE3.svg)=predictions for i-th object
+![where y](Images/Regression-metric-review/MSE2.svg)= target for i-th object, 
+![where y hat](Images/Regression-metric-review/MSE3.svg)=predictions for i-th object
 
 <br/>
 
 #### RMSE
 
-![RMSE formula](images/Regression-metric-review/RMSE1.svg)
+![RMSE formula](Images/Regression-metric-review/RMSE1.svg)
 
-![RMSE formula](images/Regression-metric-review/RMSE2.svg)
+![RMSE formula](Images/Regression-metric-review/RMSE2.svg)
 
-![RMSE formula](images/Regression-metric-review/RMSE3.svg)
+![RMSE formula](Images/Regression-metric-review/RMSE3.svg)
 
 
 If our target matrix is RMSE, we can still optimize our model with MSE , MSE is a little bit easy to work with, so everybody use MSE instead of RMSE (gradient of RMSE = constant * gradient of MSE)
@@ -68,9 +68,9 @@ We use R-squared matrix to measure our model is better than a constant baseline.
 
 ## MSPE & MAPE 
 
-![MSPE formula](images/Regression-metric-review/MSPE.svg)
+![MSPE formula](Images/Regression-metric-review/MSPE.svg)
 
-![MAPE formula](images/Regression-metric-review/MAPE.svg)
+![MAPE formula](Images/Regression-metric-review/MAPE.svg)
 
 
 
@@ -83,7 +83,7 @@ We use R-squared matrix to measure our model is better than a constant baseline.
 
 ## RMSLE
 
-![RMSLE](images/Regression-metric-review/rmsle.svg)
+![RMSLE](Images/Regression-metric-review/rmsle.svg)
 
 
 RMSLE just RMSE calculated in <img src="https://latex.codecogs.com/svg.latex?\Large&space;log" title="img-1" /> scale. The target are usually not negative, but can equal to 0 (<img src="https://latex.codecogs.com/svg.latex?\Large&space;log0" title="img-1" /> is undefined). A constant is always add to target, there we choose 1.
