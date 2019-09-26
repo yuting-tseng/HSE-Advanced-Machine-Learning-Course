@@ -22,21 +22,10 @@ This repository contains programming assignments notebooks for the [course](http
 
 ## Week 3
 
-### Metrics optimization
+* Metrics optimization
+* Mean encodings
 
-#### Classification
-* [Evaluation Metrics for Classification Problems: Quick Examples + References](http://queirozf.com/entries/evaluation-metrics-for-classification-quick-examples-references)
-* [Decision Trees: °ßGini°® vs. °ßEntropy°® criteria](https://www.garysieling.com/blog/sklearn-gini-vs-entropy-criteria)
-* [Understanding ROC curves](http://www.navan.name/roc/)
-
-#### Ranking
-* [Learning to Rank using Gradient Descent](http://icml.cc/2015/wp-content/uploads/2015/06/icml_ranking.pdf) -- original paper about pairwise method for AUC optimization
-* [Overview of further developments of RankNet](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/MSR-TR-2010-82.pdf)
-* [RankLib](https://sourceforge.net/p/lemur/wiki/RankLib/) (implemtations for the 2 papers from above)
-* [Learning to Rank Overview](https://wellecks.wordpress.com/2015/01/15/learning-to-rank-overview)
-
-#### Clustering
-* [Evaluation metrics for clustering](http://nlp.uned.es/docs/amigo2007a.pdf)
+[Week 3 note](./Notes/Week3.md)
 
 
 ## Week 4

@@ -38,6 +38,8 @@ The clssifier output probability, and the binary and multiclass classigication f
 
 We usually take soft predictions from our model and apply threshold. This metric kind of tries all possible ones and aggregates those scores. We find the maximum value of AUC, and don’t need to define the threshold.
 
+<br/>
+
 ![auc formul](Images/Classification-matric-review/auc-1.svg)
 
 * Only for binary tasks

@@ -17,22 +17,20 @@ Compare the constants
 
 ![MAE formula](Images/Regression-metric-review/MAE.svg)
 
+![RMSE formula](Images/Regression-metric-review/RMSE1.svg)
+
 , where <img src="https://latex.codecogs.com/svg.latex?\Large&space;N" title="img1" />=number of objects, 
 ![where y](Images/Regression-metric-review/MSE2.svg)= target for i-th object, 
 ![where y hat](Images/Regression-metric-review/MSE3.svg)=predictions for i-th object
 
 <br/>
 
-#### RMSE
+If our target matrix is RMSE, we can still optimize our model with MSE , MSE is a little bit easy to work with, so everybody use MSE instead of RMSE (gradient of RMSE = constant * gradient of MSE)
 
-![RMSE formula](Images/Regression-metric-review/RMSE1.svg)
 
 ![RMSE formula](Images/Regression-metric-review/RMSE2.svg)
 
 ![RMSE formula](Images/Regression-metric-review/RMSE3.svg)
-
-
-If our target matrix is RMSE, we can still optimize our model with MSE , MSE is a little bit easy to work with, so everybody use MSE instead of RMSE (gradient of RMSE = constant * gradient of MSE)
 
 <br/>
 
@@ -55,14 +53,6 @@ We use R-squared matrix to measure our model is better than a constant baseline.
   
   * Best constant: target medium
   * MAE is more robust than MSE (it is not that influence by outliers, doesn’t mean it’s always better use MAE then MSE)
-  
-<br/>
-
-#### MAE v.s. MSE
-
-* Do you have outliers in the data? <img src="https://latex.codecogs.com/svg.latex?\Large&space;\to" title="R2-2" /> use MAE
-* Are you sure they are outliers? <img src="https://latex.codecogs.com/svg.latex?\Large&space;\to" title="R2-2" /> use MAE
-* Or they are just unexpected values we should still care about? <img src="https://latex.codecogs.com/svg.latex?\Large&space;\to" title="R2-2" /> use MSE
 
 <br/>
 
