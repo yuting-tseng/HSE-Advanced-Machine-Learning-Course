@@ -147,14 +147,14 @@ Using target to generte features (mean of target value in the same feature label
 * Label encoding gives random order. No correlation with target.
 * Mean encoding helps to seperate zeros from ones
 
-Goods - numbrt of ones in group
+Goods - number of ones in group
 
 Bads - number of zeros in group
 
-* $Lijelihood = \frac{Goods}{Goods+Bads}=mean(target)$
-* $Weight of EvidencE = ln(\frac{Goods}{Bads}*100)$
-* $Count=Goods=sum(target)$
-* $Diff=Goods=Bads$
+* ![mean encoding formula 1](Images/mean-encoding-1.svg)
+* ![mean encoding formula 2](Images/mean-encoding-2.svg)
+* ![mean encoding formula 3](Images/mean-encoding-3.svg)
+* ![mean encoding formula 4](Images/mean-encoding-4.svg)
 
 
 
@@ -174,7 +174,7 @@ We need to deal with overfitting first, means we need some regularization.
 
   - Only works together with some other regularization method
 
-    $\frac{mean(target)*nrows+globalmean*alpha}{nrows+alpha}$
+    ![mean encoding formula 5](Images/mean-encoding-5.svg)
 
 * Adding random noise
 
@@ -213,10 +213,10 @@ Conclusion
 #### Correct validation remonder
 
 * Local experiments:
-  * Estimate encodings on X_tr
-  * Map them to X_tr and X_val
-  * Regularize on X_tr
-  * Validate model on X_tr/X_val split
+  * Estimate encodings on `X_tr`
+  * Map them to `X_tr` and `X_val`
+  * Regularize on `X_tr`
+  * Validate model on `X_tr/X_val` split
 * Submission:
   * Estimate encodings on whole Train data
   * Map them to Train and Test
