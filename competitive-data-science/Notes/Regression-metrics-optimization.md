@@ -21,7 +21,7 @@
 
   > `PyTorch`, `Keras`, `TF`, etc.
 
-
+<br/>
 
 #### MAE (Synonyms: **L1 loss, Median regression**)
 

@@ -137,3 +137,106 @@ Ranking materials
 clustering
 
 - [Evaluation metrics for clustering](http://nlp.uned.es/docs/amigo2007a.pdf)
+
+<br/>
+
+## Mean Encoding
+
+Using target to generte features (mean of target value in the same feature label). Why it work?
+
+* Label encoding gives random order. No correlation with target.
+* Mean encoding helps to seperate zeros from ones
+
+Goods - numbrt of ones in group
+
+Bads - number of zeros in group
+
+* $Lijelihood = \frac{Goods}{Goods+Bads}=mean(target)$
+* $Weight of EvidencE = ln(\frac{Goods}{Bads}*100)$
+* $Count=Goods=sum(target)$
+* $Diff=Goods=Bads$
+
+
+
+We need to deal with overfitting first, means we need some regularization.
+
+* CV loop inside training data (KFold, LOO)
+
+  * Robust and intuitive
+  * Usually decent result with 4-5 folds across different datasets  (KFold scheme)
+  * Need to be careful with extreme situations like LOO
+  * Perfect feature for LOO scheme
+  * Target variable leakage is still present even for KFold scheme
+
+* Smoothing 
+
+  - Alpha controls the amount of regularization
+
+  - Only works together with some other regularization method
+
+    $\frac{mean(target)*nrows+globalmean*alpha}{nrows+alpha}$
+
+* Adding random noise
+
+  * Noise degrades the quality of encoding
+  * How much noise should we add?
+  * Usually used together with LOO
+
+* Sorting and calculating expanding mean.
+
+  * Least amount of leakage
+  * No hyper parameters
+  * Irregular encoding quality
+  * Build - in CatBoost
+
+<br/>
+
+Conclusion
+
+* There are a lot ways to regularize mean encodings
+* Unending battle with target variable leakage
+* CV loop or Expanding mean for practical task
+
+<br/>
+
+#### Extension and generalizations
+
+* Using target variable in different task. Regression, multiclass
+  * More statistics for regression tasks. Percentiles, std, distribution bins.
+  * Intorducing new information for one 
+* Domains with many-tomany relations
+* Timeseries
+* Encoding interactions and numerical features
+
+<br/>
+
+#### Correct validation remonder
+
+* Local experiments:
+  * Estimate encodings on X_tr
+  * Map them to X_tr and X_val
+  * Regularize on X_tr
+  * Validate model on X_tr/X_val split
+* Submission:
+  * Estimate encodings on whole Train data
+  * Map them to Train and Test
+  * Regulatize on Train
+  * Fit on Train
+
+<br/>
+
+**Mean encoding concludsion**
+
+- Main advantages
+  - Compact transmation of categorical variables
+  - Powerful basis for feature engineering
+- Disadvantages
+  - Need careful validation, there a lot of ways to overfit
+  - Significant improvements only on specific datasets
+
+
+
+Regularization - Smoothing 
+
+* Alpha controls the amount of regularization
+* Only works together with some other regularization method
